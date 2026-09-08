@@ -22,7 +22,7 @@ function getClient() {
     username && password
       ? {
           ssl: {
-            rejectUnauthorized: false,
+            rejectUnauthorized: true,
           },
           sasl: {
             mechanism,
